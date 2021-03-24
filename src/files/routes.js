@@ -4,8 +4,8 @@ const routes = express.Router({
     mergeParams: true
 });
 
-routes.get('/', (req, res) => {
-    res.status(200).json({});
+routes.post('/', (req, res) => {
+    res.status(200).json({message:'got request'});
 });
 
 module.exports = {
